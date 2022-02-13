@@ -1,11 +1,9 @@
 import request from "request";
 
-
-const mapBoxKey = process.env.MAPBOX_TOKEN;
-const mapBoxUrl = process.env.MAPBOX_URL;
+const token = process.env.MAPBOX_TOKEN;
 
 const geocode = (adress, callback) => {
-    const url = mapBoxUrl + encodeURIComponent(adress) + ".json" + mapBoxKey;
+    const url = "https://api.mapbox.com/geocoding/v5/mapbox.places/" + encodeURIComponent(adress) + ".json?access_token=" + token;
     request({ url: url, json: true }, (error, { body } = {}) => {
         if (error) {
             callback("Unable to connect to location services!");

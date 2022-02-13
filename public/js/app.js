@@ -24,6 +24,5 @@ const forecast = weatherForm.addEventListener('submit', (e) => {
         .catch(error => {
             messageOne.textContent = error;
         });
-    console.log(search.value);
 });
 

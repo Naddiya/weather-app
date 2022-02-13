@@ -1,4 +1,6 @@
 import request from "request";
+import dotenv from 'dotenv';
+dotenv.config();
 
 const token = process.env.MAPBOX_TOKEN;
 

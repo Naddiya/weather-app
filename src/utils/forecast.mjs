@@ -1,10 +1,11 @@
 import request from "request";
+import dotenv from "dotenv";
+dotenv.config();
 
 const token = process.env.APPID;
 
 const forecast = (latitude, longitude, callback) => {
-    const url = "https://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "lon=" + longitude + "&APPID=" + token + "&units=metric";
-
+    const url = "https://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&APPID=" + token + "&units=metric";
     request({ url: url, json: true }, (error, { body } = {}) => {
         if (error) {
             callback("Unable to connect to weather services, please check network", undefined);

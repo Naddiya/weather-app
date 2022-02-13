@@ -1,6 +1,5 @@
 import request from "request";
-import dotenv from "dotenv";
-dotenv.config();
+
 
 const mapBoxKey = process.env.MAPBOX_TOKEN;
 const mapBoxUrl = process.env.MAPBOX_URL;

@@ -1,0 +1,23 @@
+{
+    "name": "live-chat",
+    "version": "1.0.0",
+    "description": "express server",
+    "main": "app.mjs",
+    "type": "module",
+    "scripts": {
+        "start": "node src/app.mjs"
+    },
+    "repository": "git@github.com:Naddiya/live-chat.git",
+    "author": "Naddiya <nadiamedkouriz@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "chalk": "^5.0.0",
+        "dotenv": "^16.0.0",
+        "express": "^4.17.2",
+        "hbs": "^4.2.0",
+        "request": "^2.88.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
+}

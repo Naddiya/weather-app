@@ -1,0 +1,107 @@
+body {
+    background: rgb(119, 173, 119);
+}
+
+h1 {
+    text-align: center;
+    width: 10%;
+    border: black solid 1px;
+    border-radius: 50% 30% 30% 70% / 60% 40% 60% 40%;
+    margin: 2rem 1rem;
+    padding: 20px;
+    background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%);
+    text-shadow: 2px 0 0 rgb(238, 149, 149), -2px 0 0 rgb(221, 131, 131), 0 2px 0 rgb(240, 148, 148), 0 -2px 0 rgb(233, 143, 143), 1px 1px rgb(231, 149, 149), -1px -1px 0 rgb(226, 140, 140), 1px -1px 0 #fff, -1px 1px 0 #fff;
+
+}
+h2 {
+    text-align: center;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.message {
+    text-align: center;
+    font-size: x-large;
+}
+
+a {
+    text-decoration: none;
+    padding: 8px;
+    border: solid rgb(32, 31, 31) 1px;
+    border-radius: 50%;
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+}
+a:hover{
+    background-color: rgb(255, 235, 53);
+}
+nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    padding:1rem;
+}
+footer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: 20px;
+    left:0;
+    width: 100vw;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    text-align: center;
+    width: 120px;
+    border: black solid 1px;
+    border-radius: 50% 30% 30% 70% / 60% 40% 60% 40%;
+    margin: 2rem 1rem;
+    padding: 20px;
+    background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%);
+    color: rgb(226, 169, 169);
+    font-weight: 600;
+    font-size: 20;
+}
+
+button:hover {
+    color: rgb(241, 241, 151);
+    background: -webkit-linear-gradient(top, #4e101e 0%,#52101f 44%,#530013 100%);
+}
+
+.display {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 2rem;
+}
+
+.display-location {
+    font-weight: 2rem;
+}
+
+.search {
+    margin-top: 2rem;
+}
+
+input {
+    background-color: antiquewhite;
+    border:none;
+    height: 30px;
+    width: 200px;
+    border-radius: 15px;
+    text-align: center;
+}
+input:focus {outline:none!important;}

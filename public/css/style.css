@@ -13,9 +13,21 @@ h1 {
     text-shadow: 2px 0 0 rgb(238, 149, 149), -2px 0 0 rgb(221, 131, 131), 0 2px 0 rgb(240, 148, 148), 0 -2px 0 rgb(233, 143, 143), 1px 1px rgb(231, 149, 149), -1px -1px 0 rgb(226, 140, 140), 1px -1px 0 #fff, -1px 1px 0 #fff;
 
 }
+
 h2 {
     text-align: center;
 }
+
+.about {
+    display:flex;
+    justify-content: center;
+    color:#112b16
+}
+.presentation {
+    margin: auto 1.5rem;
+}
+
+
 img {
     display: block;
     margin-left: auto;
@@ -38,9 +50,11 @@ a {
     font-weight: 600;
     font-size: 1rem;
 }
+
 a:hover{
     background-color: rgb(255, 235, 53);
 }
+
 nav {
     display:flex;
     flex-direction: row;
@@ -48,6 +62,7 @@ nav {
     gap: 20px;
     padding:1rem;
 }
+
 footer {
     display: block;
     margin-left: auto;
@@ -86,6 +101,7 @@ button:hover {
     text-align: center;
     font-family:Arial, Helvetica, sans-serif;
     margin-top: 2rem;
+    color:#112b16
 }
 
 .display-location {
@@ -104,4 +120,5 @@ input {
     border-radius: 15px;
     text-align: center;
 }
+
 input:focus {outline:none!important;}

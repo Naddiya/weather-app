@@ -5,6 +5,8 @@
     "main": "app.mjs",
     "type": "module",
     "scripts": {
+        "open": "open 'http://localhost:3000'",
+        "dev": "nodemon src/app.mjs",
         "start": "node src/app.mjs"
     },
     "repository": "git@github.com:Naddiya/live-chat.git",

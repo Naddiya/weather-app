@@ -12,11 +12,14 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback("Unable to find location", undefined);
         } else if (body.main && body.weather) {
-            const temperature = Math.round(body.main.temp);
+            const details = body.main;
             const forecastInfo = body.weather[0].description;
+            const { temp, temp_min, temp_max, humidity } = details;
             callback(
                 undefined,
-                "The temperature is " + temperature + " and the weather is " + forecastInfo + "."
+                "The temperature is " + Math.round(temp) + " and there is currently " + forecastInfo + ". " +
+                "The highest temperature is " + temp_max + ", " + "the lowest temparature is " + temp_min + ". " +
+                "The humidity is " + humidity + " percent. "
             );
         }
     });

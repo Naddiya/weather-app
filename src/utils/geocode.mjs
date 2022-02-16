@@ -16,7 +16,7 @@ const geocode = (adress, callback) => {
             const data = {
                 location: adress,
                 longitude: coordonates[0],
-                latitude: coordonates[1]
+                latitude: coordonates[1],
             };
             callback(error, data);
         };
